@@ -1,8 +1,8 @@
 body {
-  background-image: linear-gradient(to bottom left, #1f6c80, #0c2b49);
+  background-image: linear-gradient(to bottom left, #1f6d8086, #0c2a4959), url("../img/3273694.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
@@ -30,7 +30,7 @@ header {
   height: 39vh;
   margin: 0;
   padding-top: 15vh;
-  background: linear-gradient(0deg, rgba(16, 47, 184, 0.54), rgba(85, 87, 94, 0.69)), url("../img/landscape-1662498336494-8524.jpg");
+  background: linear-gradient(0deg, rgba(16, 47, 184, 0.54), rgba(85, 87, 94, 0.69)), url("../img/199996.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
