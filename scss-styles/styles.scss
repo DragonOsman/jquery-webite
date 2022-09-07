@@ -1,0 +1,84 @@
+body {
+  background-image: linear-gradient(#09404e, #202122);
+}
+
+nav#sticky {
+  position: fixed;
+  width: 98.2%;
+  margin: 0;
+  margin-bottom: 20vh;
+
+  & .navbar-nav > .nav-item {
+    padding: 10px;
+    margin: 2px;
+    background-color: #303035;
+
+    &:hover {
+      background-color: #222221;
+    }
+  }
+}
+
+nav#non-sticky {
+  display: none;
+}
+
+header {
+  color: #fff;
+  height: 16vh;
+  margin: 0;
+  margin-top: 20vh;
+  background-image: linear-gradient(to bottom right, rgb(60, 68, 177), rgb(34, 38, 49)),
+    url("../landscape-1662498336494-8524.jpg");
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 25.1vh;
+}
+
+main {
+  margin-top: 40vh;
+  height: 100vh;
+  color: #fff;
+
+  & .row {
+    margin-top: 50px;
+  }
+}
+
+footer {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-height: 500px) and (max-height: 519px) {
+  header {
+    height: 24vh;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-height: 520px) and (max-height: 600px) {
+  header {
+    height: 22vh;
+  }
+
+  main {
+    padding-top: 25vh;
+  }
+}
+
+@media screen and (min-height: 601px) and (max-height: 700) {
+  header {
+    height: 21vh;
+  }
+
+  main {
+    padding-top: 20vh;
+  }
+}

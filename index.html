@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="./jquery-3.6.0.min.js" async defer></script>
+  <script src="./bootstrap-5.2.0-dist/js/bootstrap.min.js" async defer></script>
+  <title>DragonOsman Web Works</title>
+</head>
+<body class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="sticky">
+    <a href="index.html" class="navbar-brand">
+      <img src="./logo.png" alt="dragon logo" />
+    </a>
+    <button
+      type="button"
+      id="navbar-toggler"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav nav-item">
+          <a href="index.html" class="nav-link active" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li class="nav nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav nav-item"><a href="about-me.html" class="nav-link">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="container-fluid bg-dark">
+    <h1>DragonOsman Web Works</h1>
+    <h2>Welcome to DragonOsman Web Works!</h2>
+    <h3>Buy services for creating a website or web application</h3>
+  </header>
+  <nav id="non-sticky"></nav>
+  <main class="jumbotron">
+    <div class="text-center">
+      <div id="carouselDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            data-bs-target="#carouselDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-bs-target="#carouselDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            data-bs-target="#carouselDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <!-- ToDo: image here -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Get a Website Built!</h5>
+              <p>Get a website built for yourself or your organization/company</p>
+              <p>Click to jump to page for this service</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <!-- ToDo: image here -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Get a Web Application Built!</h5>
+              <p>Get a web application built for yourself or your organization/company</p>
+              <p>Click to jump to page for this service</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- ToDo: image here -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Get a Quotation!</h5>
+              <p>Find out what the charges are for transations</p>
+              <p>Click to jump to page for this service</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="carouselDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="carouselDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer class="row bg-dark">
+    <div
+      class="footer-boxes
+           d-flex
+           flex-column
+           col-xs-4
+           col-sm-4
+           col-md-4
+           col-lg-4
+           col-xl-4
+           col-xxl-4"
+      id="footer-box1"
+    >
+      <a href="index.html" class="navbar-brand">
+        <img src="./logo.png" alt="dragon logo" />
+      </a>
+      Logo made with
+        <a href="https://www.designevo.com/en/" title="Free Online Logo Maker">
+          DesignEvo
+        </a>
+    </div>
+    <div
+      class="footer-boxes
+        d-flex flex-column
+        col-xs-8
+        col-sm-8
+        col-md-8
+        col-lg-8
+        col-xl-8
+        col-xxl-8
+        "
+      id="footer-box2"
+    >
+      <a href="mailto:osmanzakir90@hotmail.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/sami-zakir-12b6a7119">Find Me on LinkedIn</a>
+      <a href="https://github.com/DragonOsman">View My GitHub Page</a>
+    </div>
+  </footer>
+</body>
+</html>

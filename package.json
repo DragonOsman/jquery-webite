@@ -1,0 +1,26 @@
+{
+  "name": "website-html",
+  "version": "1.0.0",
+  "description": "web designing class final project site",
+  "main": "scripts/script.js",
+  "scripts": {
+    "sass": "sass --watch scss-styles/styles.scss styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragonOsman/web-design-final.git"
+  },
+  "keywords": [
+    "final-project",
+    "jquery-site"
+  ],
+  "author": "Osman Zakir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DragonOsman/web-design-final/issues"
+  },
+  "homepage": "https://github.com/DragonOsman/web-design-final#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
