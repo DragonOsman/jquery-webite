@@ -1,12 +1,16 @@
 body {
-  background-image: linear-gradient(#09404e, #202122);
+  background-image: linear-gradient(to bottom left,#1f6c80, #0c2b49);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 nav#sticky {
   position: fixed;
   width: 98.2%;
   margin: 0;
-  margin-bottom: 20vh;
+  z-index: 1;
 
   & .navbar-nav > .nav-item {
     padding: 10px;
@@ -25,24 +29,33 @@ nav#non-sticky {
 
 header {
   color: #fff;
-  height: 16vh;
+  height: 39vh;
   margin: 0;
-  margin-top: 20vh;
-  background-image: linear-gradient(to bottom right, rgb(60, 68, 177), rgb(34, 38, 49)),
-    url("../landscape-1662498336494-8524.jpg");
-  opacity: 0.6;
+  padding-top: 15vh;
+  background: linear-gradient(0deg, rgba(16, 47, 184, 0.54),
+      rgba(85, 87, 94, 0.69)), url("../landscape-1662498336494-8524.jpg");
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 25.1vh;
+  background-repeat: no-repeat;
 }
 
 main {
-  margin-top: 40vh;
+  margin-top: 0vh;
+  margin-bottom: 5vh;
   height: 100vh;
   color: #fff;
 
   & .row {
     margin-top: 50px;
+  }
+
+  & .carousel-caption {
+    font-weight: bold;
+    background-color: #fff7;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    color: #000;
   }
 }
 
