@@ -6,57 +6,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="./jquery-3.6.0.min.js" async defer></script>
+  <script src="./scripts/jquery-3.6.0.min.js" async defer></script>
   <script src="./bootstrap-5.2.0-dist/js/bootstrap.min.js" async defer></script>
   <title>DragonOsman Web Works</title>
 </head>
 <body class="container-fluid">
-  <div class="row container-fluid">
-    <header class="container-fluid bg-dark col-xs-12 col-sm-12 col-md-12
-                  col-lg-12 col-xl-12 col-xxl-12">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">
-          <img src="./logo.png" alt="dragon logo" />
-        </a>
-        <button
-          type="button"
-          id="navbar-toggler"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class="nav nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav nav-item"><a href="services.html" class="nav-link">Services</a></li>
-            <li class="nav nav-item">
-              <a href="about-me.html" class="nav-link active" aria-current="page">
-                About Me
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1>DragonOsman Web Works</h1>
-    </header>
-  </div>
-  <main class="jumbotron">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="sticky">
+    <a href="index.html" class="navbar-brand">
+      <img src="./img/logo.png" alt="dragon logo" />
+    </a>
+    <button
+      type="button"
+      id="navbar-toggler"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class="nav nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav nav-item">
+          <a href="about-me.html" class="nav-link active" aria-current="page">
+            About Me
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="container-fluid bg-dark">
+    <h1>DragonOsman Web Works</h1>
     <h2>Welcome to the About Page!</h2>
     <h3>Read about me here</h3>
-    <div class="text-center row">
+  </header>
+  <nav id="non-sticky"></nav>
+  <main class="jumbotron">
+    <div class="row">
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center">
-        <img src="me.jpg" alt="photo of me" class="img-fluid">
+        <img src="./img/me.jpg" alt="photo of me" class="img-fluid bio-img">
       </div>
-      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 text-center">
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
         <div class="bio">
-          I am Osman Zakir (legal name Sami Zakir).  On this site, I offer services to sell
-          websites and web applications.  You can learn more about me on the About section
-          of my personal <a href="https://www.osmanzakir.dynu.net" target="_blank">portfolio site</a>.
+          <p>
+            My name Osman Zakir (legal name Sami Zakir). My name in
+            most forums is DragonOsman. I'm afull stack web developer
+            and programmer.  I'm skilled in C++, WebAssembly (compiling
+            from C++), JavaScript (including React, jQuery and Node),
+            HTML and CSS.  I also know how to use Git.
+          </p>
+        </div>
+        <div class="test-results">
+          <div class="break"></div>
+          <div class="certificate">
+            <a
+              href="https://www.testdome.com/cert/ce57488a3f0a4950befd4876c3dc2c76"
+              class="testdome-certificate-stamp gold"
+              >
+            <span class="testdome-certificate-name">Osman Zakir</span>
+            <span class="testdome-certificate-test-name">C++ </span>
+            <span class="testdome-certificate-card-logo"
+              >TestDome <br />Certificate</span
+              ></a
+              >
+            <script type="text/javascript">
+              var stylesheet =
+                "https://www.testdome.com/content/source/stylesheets/embed.css",
+                link = document.createElement("link");
+                (link.href = stylesheet),
+                (link.type = "text/css"),
+                (link.rel = "stylesheet"),
+                (link.media = "screen,print"),
+              document.getElementsByTagName("head")[0].appendChild(link);
+            </script>
+          </div>
+          <div class="certificate">
+            <a
+              href="https://www.testdome.com/cert/5a4637d73e0b4f8fbb69459ba0e77416"
+              class="testdome-certificate-stamp gold"
+              ><span class="testdome-certificate-name">Osman Zakir</span
+              ><span class="testdome-certificate-test-name">JavaScript </span
+              ><span class="testdome-certificate-card-logo"
+              >TestDome<br />Certificate</span
+              ></a>
+            <script type="text/javascript">
+              var stylesheet =
+                "https://www.testdome.com/content/source/stylesheets/embed.css",
+                link = document.createElement("link");
+                (link.href = stylesheet),
+                (link.type = "text/css"),
+                (link.rel = "stylesheet"),
+                (link.media = "screen,print"),
+                document.getElementsByTagName("head")[0].appendChild(link);
+            </script>
+          </div>
+          <div class="certificate">
+            <a
+              href="https://www.testdome.com/cert/2d9a448b09c149bdbc0f966761429b59"
+              class="testdome-certificate-stamp silver"
+              ><span class="testdome-certificate-name">Osman Zakir</span
+              ><span class="testdome-certificate-test-name"
+              >HTML/CSS and JavaScript </span
+              ><span class="testdome-certificate-card-logo"
+              >TestDome<br />Certificate</span
+              ></a>
+            <script type="text/javascript">
+              var stylesheet =
+                "https://www.testdome.com/content/source/stylesheets/embed.css",
+                link = document.createElement("link");
+                (link.href = stylesheet),
+                (link.type = "text/css"),
+                (link.rel = "stylesheet"),
+                (link.media = "screen,print"),
+               document.getElementsByTagName("head")[0].appendChild(link);
+            </script>
+          </div>
         </div>
       </div>
     </div>
@@ -75,7 +143,7 @@
       id="footer-box1"
     >
       <a href="index.html" class="navbar-brand">
-        <img src="./logo.png" alt="dragon logo" />
+        <img src="./img/logo.png" alt="dragon logo" />
       </a>
       Logo made with
         <a href="https://www.designevo.com/en/" title="Free Online Logo Maker">

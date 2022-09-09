@@ -3,7 +3,7 @@ body {
     url("../img/3273694.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 
@@ -31,11 +31,10 @@ nav#non-sticky {
 header {
   color: #fff;
   height: 39vh;
-  margin: 0;
   padding-top: 15vh;
   background: linear-gradient(0deg, rgba(16, 47, 184, 0.54),
       rgba(85, 87, 94, 0.69)), url("../img/199996.jpg");
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,12 +50,32 @@ main {
     margin-top: 50px;
   }
 
+  & .carousel {
+    width: 450px;
+    height: 230px;
+    margin: 0 auto;
+  }
+
   & .carousel-caption {
-    font-weight: bold;
-    background-color: #fff7;
-    margin-right: 10vw;
-    margin-left: 10vw;
-    color: #000;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.452), rgba(0, 0, 255, 0.582));
+    font-weight: 500;
+  }
+
+  & .bio-img {
+    border-radius: 100%;
+  }
+
+  & .bio {
+    background-color: #23238871;
+    padding: 5px;
+
+    & a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
