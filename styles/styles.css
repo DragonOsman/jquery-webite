@@ -27,13 +27,14 @@ nav#non-sticky {
 
 header {
   color: #fff;
-  height: 39vh;
+  height: auto;
   padding-top: 15vh;
   background: linear-gradient(0deg, rgba(16, 47, 184, 0.54), rgba(85, 87, 94, 0.69)), url("../img/199996.jpg");
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 10px;
 }
 
 main {
@@ -79,33 +80,45 @@ footer {
 }
 
 @media screen and (min-height: 500px) and (max-height: 519px) {
-  header {
-    height: 24vh;
-  }
-
   main {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 135vh;
+  }
+  main .carousel {
+    width: 750px;
+    height: 260px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-height: 520px) and (max-height: 600px) {
-  header {
-    height: 22vh;
-  }
-
   main {
     padding-top: 25vh;
     padding-bottom: 25vh;
   }
 }
-@media screen and (min-height: 601px) and (max-height: 700) {
-  header {
-    height: 21vh;
-  }
-
+@media screen and (min-height: 601px) and (max-height: 700px) {
   main {
     padding-top: 20vh;
     padding-bottom: 20vh;
+    margin-bottom: 78vh;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 300px) {
+  button#navbar-toggler {
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 301px) and (max-width: 400px) {
+  button#navbar-toggler {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 767px) {
+  main .carousel {
+    width: 540px;
+    height: 284px;
+    margin: 0 auto;
   }
 }
 
