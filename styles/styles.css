@@ -67,6 +67,9 @@ main .bio a {
 main .bio a:hover {
   text-decoration: underline;
 }
+main .bio .test-results {
+  margin-bottom: 150px;
+}
 
 footer {
   color: #fff;
