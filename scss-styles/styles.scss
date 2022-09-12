@@ -7,6 +7,14 @@ body {
   background-size: cover;
 }
 
+a:not(nav a, .project-descrition a) {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 nav#sticky {
   position: fixed;
   width: 98.2%;
@@ -43,7 +51,7 @@ header {
 
 main {
   margin-top: 0vh;
-  margin-bottom: 5vh;
+  margin-bottom: 50vh;
   height: 100vh;
   color: #fff;
 
@@ -84,13 +92,15 @@ main {
   }
 }
 
-.project-container img {
-  width: 100%;
-  border: 3px #fff solid;
+.project-container {
+  & img {
+    width: 100%;
+    border: 3px #fff solid;
 
-  &:hover {
-    opacity: 0.5;
-    border-color: #287098;
+    &:hover {
+      opacity: 0.5;
+      border-color: #287098;
+    }
   }
 }
 
@@ -131,38 +141,10 @@ footer {
   left: 0;
   right: 0;
   padding: 10px;
+  margin-top: 100vh;
 
   & #footer-box2 {
     margin-top: 20px;
-  }
-}
-
-@media screen and (min-height: 500px) and (max-height: 519px) {
-  main {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 135vh;
-
-    & .carousel {
-      width: 750px;
-      height: 260px;
-      margin: 0 auto;
-    }
-  }
-}
-
-@media screen and (min-height: 520px) and (max-height: 600px) {
-  main {
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-  }
-}
-
-@media screen and (min-height: 601px) and (max-height: 700px) {
-  main {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    margin-bottom: 78vh;
   }
 }
 
@@ -178,10 +160,18 @@ footer {
   }
 }
 
+@media screen and (min-height: 401px) and (max-width: 500px) {
+  footer {
+    margin-top: 450vh;
+  }
+}
+
 @media screen and (min-width: 701px) and (max-width: 767px) {
   main .carousel {
     width: 540px;
     height: 284px;
     margin: 0 auto;
+    height: 100vh;
+    margin-bottom: 400vh;
   }
 }
