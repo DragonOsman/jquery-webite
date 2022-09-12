@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to bottom left, #1f6d8086, #0c2a4959), url("../img/3273694.jpg");
+  background-image: linear-gradient(to bottom left, #28709886, #37383c59), url("../img/3273694.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -70,6 +70,44 @@ main .bio a:hover {
 }
 main .bio .test-results {
   margin-bottom: 150px;
+}
+
+.project-container img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+.project-container img:hover {
+  opacity: 0.5;
+  border-color: #287098;
+}
+
+.project-description {
+  background-color: #000;
+  padding: 0 10px 5px 10px;
+  display: inline-block;
+  height: 120px;
+  overflow: auto;
+}
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover, .btn-light:hover, .btn-dark:hover {
+  background: #287098;
+  color: #000;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+.btn-light {
+  background: #b6b7bc;
+  color: #37383c;
 }
 
 footer {
